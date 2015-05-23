@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+	<head>
+		<!--meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/-->
+		<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+		<b:include data='blog' name='all-head-content'/>
+		<title><data:blog.pageTitle/></title>
+
+		<b:skin><![CDATA[/*
+		
+		*/]]>
+		</b:skin>
+		<style>
+		.section{
+			margin:0;
+		}
+		#all_display{
+			width:100%;
+		}
+		#main_contents{
+			width:90%;
+			max-width:1280px;
+			margin: 0 auto;
+		}
+		#main{
+			width:70%;
+			float: left;
+		}
+		#sidebar{
+			width:30%;
+			float: left;
+		}
+		#footer{
+			clear: both;
+		}
+		@media screen and (max-width: 768px){
+			#main_contents{
+				width:100%;
+			}
+			#main{
+				width:100%;
+			}
+			#sidebar{
+				width:100%;
+			}
+		}
+		</style>
+		<b:include data='blog' name='google-analytics'/>
+	</head>
+	<body>
+		<div id='all_display'>
+			<b:section id='herader' class='herder' maxwidgets='2' showaddelement='no'>
+				<b:widget id='Navbar1' locked='true'  type='Navbar'>
+				</b:widget>
+				<b:widget id='Header1' locked='true'  type='Header'>
+				</b:widget>
+			</b:section>
+			<div id='main_contents' style="">
+					<b:section class='main' id='main' showaddelement='no'>
+					</b:section>
+					<b:section class='sidebar' id='sidebar' preferred='yes'>
+					</b:section>
+			</div>
+			<b:section class='footer' id='footer' preferred='yes'>
+
+			</b:section>
+		</div>
+	</body>
+</html>
